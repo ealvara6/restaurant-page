@@ -1,23 +1,27 @@
+@use './colors';
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background-color: colors.$color1;
+}
+
 #content {
   display: grid;
+  font-family: 'Roboto', sans-serif;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr;
   height: 100vh;
-
-  #navbar {
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-row: 1;
-    grid-column: 1 / -1;
-
-    #restaurant-icon {
-      align-self: center;
-      justify-self: center;
-      width: 100px;
-      height: 100px;
-    }
-  }
 
   #photo {
     grid-row: 2;

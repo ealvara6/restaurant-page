@@ -1,0 +1,44 @@
+@use '../colors';
+
+#navbar {
+  display: grid;
+  background-color: colors.$color4;
+  color: white;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-row: 1;
+  grid-column: 1 / -1;
+
+  #restaurant-icon {
+    width: 75px;
+    height: 75px;
+  }
+  
+  #my-restaurant {
+    font-size: 50px;
+    justify-self: start;
+  }
+
+  #tab-list {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 500px;
+    height: 100%;
+    font-size: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .tab:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import './style.scss';
 import './reset.scss';
-import homePage from './homepage/homepage';
+// import homePage from './homepage/homepage';
 import navbar from './navbar/navbar';
 
 const component = () => {

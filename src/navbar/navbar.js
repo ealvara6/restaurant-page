@@ -1,4 +1,5 @@
 import icon from './hamburger.png';
+import './navbar.scss';
 
 const navbar = () => {
   const element = document.createElement('div');
@@ -15,10 +16,14 @@ const navbar = () => {
   element.appendChild(restaurantName);
 
   const tabData = ['Home', 'Menu', 'Contact'];
-  const tabList = document.createElement('ul');
+  const tabList = document.createElement('div');
+  tabList.id = 'tab-list';
   tabData.forEach((item) => {
-    const li = document.createElement('li');
-    li.innerHTML = item;
+    const li = document.createElement('div');
+    const text = document.createElement('div');
+    text.innerHTML = item;
+    li.className = 'tab';
+    li.appendChild(text);
     tabList.appendChild(li);
   });
   element.appendChild(tabList);

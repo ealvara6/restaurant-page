@@ -13,7 +13,10 @@
 }
 
 body {
-  background-color: colors.$color1;
+  background-image: url('./assets/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
 }
 
 #content {
@@ -23,6 +26,10 @@ body {
   grid-template-rows: 100px 1fr;
   height: 100vh;
 
+  .page {
+    width: 75vw;
+  }
+
   #photo {
     grid-row: 2;
     grid-column: 1;
@@ -31,5 +38,10 @@ body {
   #info {
     grid-row: 2;
     grid-column: 2;
+  }
+
+  #homepage {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 }

@@ -1,0 +1,37 @@
+@use '../colors';
+
+#homepage {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-self: center;
+  align-items: center;
+  justify-items: center;
+  background-color: colors.$color1
+}
+
+#homepage-photo {
+  border-radius: 15px;
+  grid-column: 1;
+  width: 500px;
+}
+
+#homepage-content {
+  display: grid;
+  grid-template-columns: minmax(200px, 500px);
+  grid-template-rows: minmax(min-content, 50px) 1fr 1fr;
+  grid-column: 2;
+  width: minmax(200px, 500px);
+  height: 500px;
+
+  #homepage-header {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+  #homepage-description {
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+}

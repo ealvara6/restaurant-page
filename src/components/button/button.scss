@@ -1,0 +1,15 @@
+@use '../../colors';
+
+button {
+  background-color: colors.$color3;
+  border: colors.$color3;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}

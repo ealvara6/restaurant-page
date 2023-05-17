@@ -1,20 +1,19 @@
-@use '../colors';
+@use '../../colors';
 
-#homepage {
+#homepage-content {
   display: grid;
   gap: 25px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  justify-self: center;
   align-items: center;
   justify-items: center;
-  background-color: colors.$color1
 }
 
 #homepage-photo {
   border-radius: 15px;
   grid-column: 1;
-  width: 500px;
+  max-width: 500px;
+  height: auto;
 }
 
 #homepage-content {

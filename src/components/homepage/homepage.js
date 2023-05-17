@@ -1,6 +1,6 @@
 import homepageImage from './images/homepage.jpg';
 import './homepage.scss';
-import buttonComponent from '../components/button/button';
+import buttonComponent from '../button/button';
 
 const homePage = () => {
   const element = document.createElement('div');

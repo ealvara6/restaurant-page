@@ -1,33 +1,57 @@
-import tacosImg from '../../assets/images/tacos.jpg';
 import './menu.scss';
 
-const item = () => {
+class Item {
+  constructor(name, desc, price, img) {
+    this.name = name,
+    this.desc = desc,
+    this.price = price,
+    this.img = img
+  }
+
+  // get name() { return this.name; }
+
+  // set name(value) { this.name = value; }
+
+  // get desc() { return this.desc; }
+
+  // set desc(value) { this.desc = value; }
+
+  // get price() { return this.price; }
+
+  // set price(value) { this.price = value; }
+}
+
+const itemComponent = (item) => {
   const element = document.createElement('div');
   element.className = 'card';
-  element.id = 'tacos';
+  element.id = item.name;
 
   const itemName = document.createElement('div');
   itemName.className = 'item-name';
-  itemName.innerHTML = 'tacos';
+  itemName.innerHTML = item.name;
   element.appendChild(itemName);
 
   const itemDesc = document.createElement('div');
   itemDesc.className = 'item-description';
-  itemDesc.innerHTML = 'this is a test description';
+  itemDesc.innerHTML = item.desc;
   element.appendChild(itemDesc);
 
   const itemPrice = document.createElement('div');
   itemPrice.className = 'item-price';
-  itemPrice.innerHTML = '$0.99';
+  itemPrice.innerHTML = item.price;
   element.appendChild(itemPrice);
 
   const itemImg = new Image();
-  itemImg.src = tacosImg;
+  itemImg.src = item.img;
   itemImg.className = 'item-img';
   element.appendChild(itemImg);
-  console.log(element);
 
   return element;
 };
 
-export default item;
+export default itemComponent;
+
+export {
+  Item,
+  itemComponent,
+};

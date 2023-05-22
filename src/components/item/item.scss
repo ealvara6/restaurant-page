@@ -1,0 +1,60 @@
+@use '../../colors';
+
+#menu-title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#menu-items {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: 300px;
+  padding: 30px;
+  gap: 30px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+  background-color: colors.$color3;
+  color: white;
+  border: 1px black solid;
+  border-radius: 20px;
+  column-gap: 15px;
+  height: 260px;
+  width: 518px;
+}
+
+.item-name {
+  background-color: colors.$color4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.item-description {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+}
+
+.item-img {
+  width: 300px;
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.item-price {
+}

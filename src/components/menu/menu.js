@@ -1,6 +1,22 @@
 import { Item, itemComponent } from '../item/item';
 import './menu.scss';
 import tacosImg from '../../assets/images/tacos.jpg';
+import enchiladasImg from '../../assets/images/enchiladas.jpg';
+
+const itemArray = [
+  {
+    name: 'tacos',
+    desc: 'these are tacos',
+    price: '$0.99',
+    img: tacosImg,
+  },
+  {
+    name: 'enchiladas',
+    desc: 'this are enchiladas',
+    price: '$29.99',
+    img: enchiladasImg,
+  },
+];
 
 const menuPage = () => {
   const element = document.createElement('div');
@@ -14,10 +30,10 @@ const menuPage = () => {
 
   const menuItems = document.createElement('div');
   menuItems.id = 'menu-items';
-  const itemImg = new Image();
-  itemImg.src = tacosImg;
-  const tacos = new Item('tacos', 'these are tacos', '$0.99', tacosImg);
-  menuItems.appendChild(itemComponent(tacos));
+  itemArray.forEach((item) => {
+    const menuItem = new Item(item.name, item.desc, item.price, item.img);
+    menuItems.appendChild(itemComponent(menuItem));
+  });
   element.appendChild(menuItems);
 
   return element;

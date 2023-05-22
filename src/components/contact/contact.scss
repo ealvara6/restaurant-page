@@ -1,0 +1,35 @@
+@use '../../colors';
+
+#contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-card {
+  display: grid;
+  background-color: colors.$color4;
+  color: white;
+  grid-template-columns: 430px 1fr;
+  grid-template-rows: 300px 80px 80px;
+  border: 1px black solid;
+  border-radius: 25px;
+  width: 1000px;
+  height: 600px;
+
+  .header {
+    font-weight: 800;
+  }
+}
+
+#contact-content {
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+#contact-img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  width: 400px;
+  border-radius: 25px 0px 0px 25px;
+}

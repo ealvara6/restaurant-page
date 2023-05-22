@@ -1,4 +1,4 @@
-import './menu.scss';
+import './item.scss';
 
 class Item {
   constructor(name, desc, price, img) {
@@ -7,18 +7,6 @@ class Item {
     this.price = price,
     this.img = img
   }
-
-  // get name() { return this.name; }
-
-  // set name(value) { this.name = value; }
-
-  // get desc() { return this.desc; }
-
-  // set desc(value) { this.desc = value; }
-
-  // get price() { return this.price; }
-
-  // set price(value) { this.price = value; }
 }
 
 const itemComponent = (item) => {
@@ -26,20 +14,21 @@ const itemComponent = (item) => {
   element.className = 'card';
   element.id = item.name;
 
+  const itemNameContainer = document.createElement('div');
+  itemNameContainer.className = 'item-name';
   const itemName = document.createElement('div');
-  itemName.className = 'item-name';
   itemName.innerHTML = item.name;
-  element.appendChild(itemName);
+  itemNameContainer.appendChild(itemName);
+  element.appendChild(itemNameContainer);
 
   const itemDesc = document.createElement('div');
   itemDesc.className = 'item-description';
-  itemDesc.innerHTML = item.desc;
-  element.appendChild(itemDesc);
-
+  itemDesc.innerHTML = `<div>${item.desc}</div>`;
   const itemPrice = document.createElement('div');
   itemPrice.className = 'item-price';
   itemPrice.innerHTML = item.price;
-  element.appendChild(itemPrice);
+  itemDesc.appendChild(itemPrice);
+  element.appendChild(itemDesc);
 
   const itemImg = new Image();
   itemImg.src = item.img;

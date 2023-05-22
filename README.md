@@ -1,4 +1,9 @@
 # restaurant-page
+
+This is a simple restaurant page where I reinforced what I was taught from the previous learning module. I focused on using webpack to create this website as well as importing/exporting modules to have cleaner and more readable code. Any advice on how to improve my code would be greatly appreciated.
+
+CREDITS:
+
 restaurant-icon attribute = <a href="https://www.flaticon.com/free-icons/taco" title="taco icons">Taco icons created by Freepik - Flaticon</a>
 
 homepage photo credit = Photo by Rajesh TP: https://www.pexels.com/photo/close-up-photo-of-biryani-dish-1624487/

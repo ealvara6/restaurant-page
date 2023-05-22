@@ -4,7 +4,8 @@ import homePage from './components/homepage/homepage';
 import navbar from './components/navbar/navbar';
 
 const component = () => {
-  const element = document.getElementById('content');
+  const element = document.createElement('div');
+  element.id = 'content';
   element.appendChild(navbar());
   element.appendChild(homePage());
 

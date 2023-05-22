@@ -1,14 +1,6 @@
-import icon from './taco.png';
+import icon from '../../assets/images/taco.png';
 import './navbar.scss';
-import activePage from '../activepage';
-
-// const activeTab = (li, tabList) => {
-//   tabList.childNodes.forEach((item) => {
-//     item.classList.remove('active');
-//   });
-//   li.classList.add('active');
-//   activePage(li.textContent);
-// };
+import activePage from '../../activepage';
 
 const createTabs = (tabList, tabData) => {
   tabData.forEach((item) => {
@@ -39,6 +31,7 @@ const navbar = () => {
   const restaurantName = document.createElement('div');
   restaurantName.id = 'my-restaurant';
   restaurantName.innerHTML = 'La Taqueria';
+  restaurantName.addEventListener('click', () => activePage('Home'));
   element.appendChild(restaurantName);
 
   const tabData = ['Home', 'Menu', 'Contact'];

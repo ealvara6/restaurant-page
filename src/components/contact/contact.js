@@ -1,4 +1,4 @@
-import '../../style.scss';
+import '../../assets/styles/style.scss';
 import './contact.scss';
 import contactImg from '../../assets/images/contact-photo.jpg';
 

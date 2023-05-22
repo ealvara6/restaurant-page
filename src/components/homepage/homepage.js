@@ -1,4 +1,4 @@
-import homepageImage from './images/homepage.jpg';
+import homepageImage from '../../assets/images/homepage.jpg';
 import './homepage.scss';
 import buttonComponent from '../button/button';
 import activePage from '../../activepage';

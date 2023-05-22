@@ -1,7 +1,7 @@
-import './style.scss';
-import './reset.scss';
+import './assets/styles/style.scss';
+import './assets/styles/reset.scss';
 import homePage from './components/homepage/homepage';
-import navbar from './navbar/navbar';
+import navbar from './components/navbar/navbar';
 
 const component = () => {
   const element = document.getElementById('content');

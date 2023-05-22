@@ -1,4 +1,4 @@
-@use '../colors';
+@use '../../assets/styles/colors';
 
 #navbar {
   display: grid;
@@ -20,6 +20,7 @@
   #my-restaurant {
     font-size: 50px;
     justify-self: start;
+    cursor: pointer;
   }
 
   #tab-list {

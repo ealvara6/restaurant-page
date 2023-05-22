@@ -4,8 +4,8 @@ import contactPage from './components/contact/contact';
 
 const activeTab = (tab) => {
   const tabs = document.querySelectorAll('.tab');
-  tabs.forEach((tab) => {
-    tab.classList.remove('active');
+  tabs.forEach((item) => {
+    item.classList.remove('active');
   });
 
   const element = document.getElementById(tab);
@@ -15,7 +15,6 @@ const activeTab = (tab) => {
 const activePage = (tab) => {
   const element = document.getElementById('content');
   const page = document.querySelector('#content > :nth-child(2)');
-  console.log(page);
   element.removeChild(page);
   switch (tab) {
     case 'Home':

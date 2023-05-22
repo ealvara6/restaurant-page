@@ -30,7 +30,7 @@ const contactCard = () => {
 const contactPage = () => {
   const element = document.createElement('div');
   element.className = 'page';
-  element.id = 'contact-page';
+  element.id = 'contact';
   element.appendChild(contactCard());
 
   return element;

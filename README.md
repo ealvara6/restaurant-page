@@ -1,5 +1,5 @@
 # restaurant-page
-restaurant-icon attribute = <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by Freepik - Flaticon</a>
+restaurant-icon attribute = <a href="https://www.flaticon.com/free-icons/taco" title="taco icons">Taco icons created by Freepik - Flaticon</a>
 
 homepage photo credit = Photo by Rajesh TP: https://www.pexels.com/photo/close-up-photo-of-biryani-dish-1624487/
 

@@ -4,7 +4,7 @@ import buttonComponent from '../button/button';
 
 const homePage = () => {
   const element = document.createElement('div');
-  element.id = 'homepage';
+  element.id = 'home';
   element.className = 'page';
 
   const image = new Image();

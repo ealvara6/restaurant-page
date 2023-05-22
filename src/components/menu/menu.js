@@ -20,7 +20,7 @@ const itemArray = [
 
 const menuPage = () => {
   const element = document.createElement('div');
-  element.id = 'menu-page';
+  element.id = 'menu';
   element.className = 'page';
 
   const menuTitle = document.createElement('div');

@@ -3,3 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;
 }
+
+.item-description :first-child {
+  padding-top: 15px;
+}

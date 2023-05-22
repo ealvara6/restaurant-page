@@ -10,3 +10,7 @@ taco-image = Photo by Chitokan C.: https://www.pexels.com/photo/close-up-photo-o
 enchiladas-image = Photo by Loren Castillo: https://www.pexels.com/photo/enchiladas-with-sauce-served-on-kale-9213936/
 
 contact-image = Photo by Malidate Van: https://www.pexels.com/photo/person-making-dough-784633/
+
+torta-image = Photo by Anibal Torres: https://www.pexels.com/photo/photo-of-three-tacos-and-a-torta-14473870/
+
+burrito-image = Photo by Polina Tankilevitch: https://www.pexels.com/photo/close-up-photo-of-a-burrito-5848704/

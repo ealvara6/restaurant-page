@@ -26,7 +26,7 @@ const itemComponent = (item) => {
   itemDesc.innerHTML = `<div>${item.desc}</div>`;
   const itemPrice = document.createElement('div');
   itemPrice.className = 'item-price';
-  itemPrice.innerHTML = item.price;
+  itemPrice.innerHTML = `$${item.price}`;
   itemDesc.appendChild(itemPrice);
   element.appendChild(itemDesc);
 
